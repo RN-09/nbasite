@@ -8,23 +8,23 @@
 
     <body style="margin:0;font-family:Arial,sans-serif;">
 
-        <h1 style="background-color:red;color:white;padding:30px;text-align:center;margin:0;font-size:70px;">
+        <h1 style="background-color:red;color:white;padding:30px;text-align:center;margin:0;font-size:clamp(32px,7vw,70px);">
             National Basketball Association
         </h1>
 
         <div style="background-color:skyblue;padding:20px;text-align:center;border-bottom:1px solid #ccc;">
-            <a href="storia.html" style="color:black;text-decoration:none;margin:0 130px;font-weight:bold;font-size:30px;">Storia</a>
-            <a href="record.html" style="color:black;text-decoration:none;margin:0 130px;font-weight:bold;font-size:30px;">Record</a>
-            <a href="social.html" style="color:black;text-decoration:none;margin:0 130px;font-weight:bold;font-size:30px;">Social</a>
+            <a href="storia.html" style="color:black;text-decoration:none;margin:10px 15px;display:inline-block;font-weight:bold;font-size:30px;">Storia</a>
+            <a href="record.html" style="color:black;text-decoration:none;margin:10px 15px;display:inline-block;font-weight:bold;font-size:30px;">Record</a>
+            <a href="social.html" style="color:black;text-decoration:none;margin:10px 15px;display:inline-block;font-weight:bold;font-size:30px;">Social</a>
         </div>
 
         <div style="background-image:url('https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg');background-size:cover;background-position:center;padding:40px;">
 
             <div style="background-color:rgba(255,255,255,0.90);padding:40px;border-radius:20px;">
 
-                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;">
 
-                    <div style="width:70%;">
+                    <div style="width:70%;min-width:300px;flex:1;">
 
                         <div style="display:flex;align-items:flex-start;gap:30px;margin-bottom:50px;">
 
@@ -33,7 +33,7 @@
                                     The NBA logo
                                 </div>
 
-                                <img src="https://upload.wikimedia.org/wikipedia/it/7/78/NBA_logo_vettoriale.svg" style="height:390px;margin-top:30px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/it/7/78/NBA_logo_vettoriale.svg" style="max-width:100%;height:auto;margin-top:30px;">
                             </div>
 
                             <div style="font-size:18px;font-weight:500;max-width:500px;margin-top:70px;line-height:1.8;text-align:justify;">
@@ -48,30 +48,34 @@
                                 Classifiche 2026 Regular Season
                             </h2>
 
-                            <table border="1" style="margin:auto;border-collapse:collapse;font-size:18px;background-color:white;">
+                            <div style="overflow-x:auto;">
 
-                                <tr style="background-color:#eee;">
-                                    <th colspan="2" style="padding:10px;">Eastern Conference</th>
-                                    <th colspan="2" style="padding:10px;">Western Conference</th>
-                                </tr>
+                                <table border="1" style="margin:auto;border-collapse:collapse;font-size:18px;background-color:white;">
 
-                                <tr><td>1</td><td>Pistons</td><td>1</td><td>Thunder</td></tr>
-                                <tr><td>2</td><td>Celtics</td><td>2</td><td>Spurs</td></tr>
-                                <tr><td>3</td><td>Knicks</td><td>3</td><td>Nuggets</td></tr>
-                                <tr><td>4</td><td>Cavaliers</td><td>4</td><td>Lakers</td></tr>
-                                <tr><td>5</td><td>Raptors</td><td>5</td><td>Rockets</td></tr>
-                                <tr><td>6</td><td>Hawks</td><td>6</td><td>Timberwolves</td></tr>
-                                <tr><td>7</td><td>76ers</td><td>7</td><td>Trail Blazers</td></tr>
-                                <tr><td>8</td><td>Magic</td><td>8</td><td>Suns</td></tr>
-                                <tr><td>9</td><td>Hornets</td><td>9</td><td>Clippers</td></tr>
-                                <tr><td>10</td><td>Heat</td><td>10</td><td>Warriors</td></tr>
-                                <tr><td>11</td><td>Bucks</td><td>11</td><td>Pelicans</td></tr>
-                                <tr><td>12</td><td>Bulls</td><td>12</td><td>Mavericks</td></tr>
-                                <tr><td>13</td><td>Nets</td><td>13</td><td>Grizzlies</td></tr>
-                                <tr><td>14</td><td>Pacers</td><td>14</td><td>Kings</td></tr>
-                                <tr><td>15</td><td>Wizards</td><td>15</td><td>Jazz</td></tr>
+                                    <tr style="background-color:#eee;">
+                                        <th colspan="2" style="padding:10px;">Eastern Conference</th>
+                                        <th colspan="2" style="padding:10px;">Western Conference</th>
+                                    </tr>
 
-                            </table>
+                                    <tr><td>1</td><td>Pistons</td><td>1</td><td>Thunder</td></tr>
+                                    <tr><td>2</td><td>Celtics</td><td>2</td><td>Spurs</td></tr>
+                                    <tr><td>3</td><td>Knicks</td><td>3</td><td>Nuggets</td></tr>
+                                    <tr><td>4</td><td>Cavaliers</td><td>4</td><td>Lakers</td></tr>
+                                    <tr><td>5</td><td>Raptors</td><td>5</td><td>Rockets</td></tr>
+                                    <tr><td>6</td><td>Hawks</td><td>6</td><td>Timberwolves</td></tr>
+                                    <tr><td>7</td><td>76ers</td><td>7</td><td>Trail Blazers</td></tr>
+                                    <tr><td>8</td><td>Magic</td><td>8</td><td>Suns</td></tr>
+                                    <tr><td>9</td><td>Hornets</td><td>9</td><td>Clippers</td></tr>
+                                    <tr><td>10</td><td>Heat</td><td>10</td><td>Warriors</td></tr>
+                                    <tr><td>11</td><td>Bucks</td><td>11</td><td>Pelicans</td></tr>
+                                    <tr><td>12</td><td>Bulls</td><td>12</td><td>Mavericks</td></tr>
+                                    <tr><td>13</td><td>Nets</td><td>13</td><td>Grizzlies</td></tr>
+                                    <tr><td>14</td><td>Pacers</td><td>14</td><td>Kings</td></tr>
+                                    <tr><td>15</td><td>Wizards</td><td>15</td><td>Jazz</td></tr>
+
+                                </table>
+
+                            </div>
 
                             <div style="margin-top:30px;font-size:18px;font-weight:bold;line-height:1.6;">
                                 La classifica NBA della regular season si basa sul numero di vittorie e sconfitte ottenute da ciascuna squadra durante un totale di 82 partite. Le squadre sono suddivise in due conference principali, Eastern e Western, ognuna composta da 15 squadre. Al termine della regular season le prime 6 accedono ai playoff mentre le squadre dal 7° al 10° posto partecipano al play-in.
@@ -81,7 +85,7 @@
 
                     </div>
 
-                    <div style="width:28%;">
+                    <div style="width:28%;min-width:280px;flex:1;">
 
                         <h2 style="text-align:center;background-color:yellow;color:black;padding:10px;border-radius:10px;margin-top:100px;">
                             Ultime Notizie NBA
